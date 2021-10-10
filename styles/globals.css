@@ -1,16 +1,26 @@
-html,
+:root {
+  --pri-100: hsl(220, 98%, 61%);
+  --pri-110: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(289, 87%, 65%));
+}
+
+.theme-light {
+  --neutral-100: hsl(1, 0%, 98%);
+  --neutral-110: hsl(236, 33%, 92%);
+  --neutral-120: hsl(233, 11%, 84%);
+  --neutral-130: hsl(236, 9%, 61%);
+  --neutral-140: hsl(235, 19%, 35%);
+}
+
+.theme-dark {
+  --neutral-100: hsl(236, 21%, 11%);
+  --neutral-110: hsl(235, 24%, 19%);
+  --neutral-120: hsl(234, 39%, 85%);
+  --neutral-130: hsl(236, 33%, 92%);
+  --neutral-140: hsl(234, 11%, 52%);
+  --neutral-150: hsl(233, 14%, 35%);
+  --neutral-160: hsl(237, 14%, 26%);
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  font-family: "Josepin sans", sans-serif;
 }
