@@ -23,10 +23,11 @@ export default defineConfig({
             },
 
             fontFamily: {
-                sans: ["Josefine Sans", "sans-serif"]
-            }
+                'sans': ["Josefine Sans", "sans-serif"]
+            },
 
         },
+
         backgroundImage: (theme) => ({
             "dark-mobile": "url('/images/bg-mobile-dark.jpg')",
             "light-mobile": "url('/images/bg-mobile-light.jpg')",
@@ -34,6 +35,11 @@ export default defineConfig({
             "light-desktop": "url('/images/bg-desktop-light.jpg')",
             "pri-110": "var(--pri-110)",
         }),
-        plugins: []
+
+        plugins: [],
+
+    },
+    shortcuts: {
+        'pgt-focus-visible': 'rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:rounded-full '
     }
 })
