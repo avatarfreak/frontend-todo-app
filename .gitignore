@@ -32,3 +32,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+public/images/favicon-32x32.png
