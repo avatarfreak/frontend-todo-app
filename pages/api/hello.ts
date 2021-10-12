@@ -5,6 +5,7 @@ type Data = {
   name: string
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
   res.status(200).json({ name: 'John Doe' })
 }
