@@ -1,11 +1,24 @@
 import React from "react";
+import { TodoContext } from "../context/TodoContext";
 
 const useTodo = () => {
-  return (
-    <div>
-      <h1>useTodo</h1>
-    </div>
-  );
+  const {
+    todos,
+    toggleTodo,
+    clearCompletedTodo,
+    deleteTodo,
+    addTodo,
+    swapTodo,
+  } = React.useContext(TodoContext);
+  return {
+    todos: todos,
+    pending: todos.filter((todo) => !todo.isCompleted).length,
+    addTodo,
+    toggleTodo,
+    deleteTodo,
+    clearCompletedTodo,
+    swapTodo,
+  };
 };
 
 export { useTodo };
