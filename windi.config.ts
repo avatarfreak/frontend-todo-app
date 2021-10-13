@@ -29,10 +29,10 @@ export default defineConfig({
         },
 
         backgroundImage: (theme) => ({
-            "dark-mobile": "url('/images/bg-mobile-dark.jpg')",
-            "light-mobile": "url('/images/bg-mobile-light.jpg')",
-            "dark-desktop": "url('/images/bg-desktop-dark.jpg')",
-            "light-desktop": "url('/images/bg-desktop-light.jpg')",
+            "dark-mobile": "url('./public/images/bg-mobile-dark.jpg')",
+            "light-mobile": "url('./public/images/bg-mobile-light.jpg')",
+            "dark-desktop": "url('./public/images/bg-desktop-dark.jpg')",
+            "light-desktop": "url('./public/images/bg-desktop-light.jpg')",
             "pri-110": "var(--pri-110)",
         }),
 
