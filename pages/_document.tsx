@@ -9,13 +9,12 @@ class MyDocument extends Document {
   render() {
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH;
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="description" content="Todo App challenge by avatarfreak" />
           <link rel="shortcut icon" href={prefix + "/favicon.ico"} type="image/x-icon" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
             rel="stylesheet"
