@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import Head from "next/head";
 import type { AppProps } from "next/app";
 import "windi.css";
 import React from "react";
