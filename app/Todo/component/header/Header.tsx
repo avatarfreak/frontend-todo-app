@@ -27,9 +27,9 @@ const Header = () => {
 
             {/* toggle theme image */}
             <button onClick={() => toggleDark()} className="pgt-focus-visible">
-              <figure>
+              <div>
                 {isDark ? <img src={sun} alt="theme-dark" /> : <img src={moon} alt="theme-light" />}
-              </figure>
+              </div>
             </button>
           </div>
 
