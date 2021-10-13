@@ -64,15 +64,15 @@ const TodoItem: React.FC<ITodo> = ({ todo, toggleTodo, deleteTodo, swapTodo, id 
             className="pgt-focus-visible appearance-none cursor-pointer h-5 w-5 md:h-6 md:w-6 border border-neutral-130  rounded-full flex-shrink-0"
           />
           <span
-            style={{ display: todo.isCompleted ? "flex" : "" }}
-            className=" hidden absolute h-5 w-5 md:h-6 md:w-6 border-pri-110 rounded-full bg-pri-110 flex flex-shrink-0 items-center justify-center "
+            style={{ display: todo.isCompleted ? "flex" : "none" }}
+            className="hidden absolute h-5 w-5 md:h-6 md:w-6 border-pri-110 rounded-full bg-pri-110 flex flex-shrink-0 items-center justify-center "
           >
             <img src={IconCheck} alt="checked" />
           </span>
           <span
             style={{
               textDecoration: todo.isCompleted ? "line-through" : "none ",
-              color: todo.isCompleted ? "var(--neutral-160)" : "none",
+              color: todo.isCompleted ? "var(--neutral-160)" : "var(--neutral-150)",
             }}
             className="text-neutral-140 dark:text-neutral-120 text-xs md:text-base font-bold block ml-4 md:ml-6 flex-auto cursor-pointer"
           >
