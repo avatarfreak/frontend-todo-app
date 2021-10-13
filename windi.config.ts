@@ -3,7 +3,7 @@ import { defineConfig } from "windicss-webpack-plugin";
 export default defineConfig({
     attributify: true,
     extract: {
-        include: ['**/*.{jsx,tsx,css}', './app/component/**/*.{jsx,js,ts,tsx'],
+        include: ['**/*.{jsx,tsx,css}', './app/Todo/**/*.{jsx,js,ts,tsx'],
         exclude: ['node_modules', '.git', '.next'],
     },
     darkMode: "class", //false , class, media
