@@ -1,6 +1,5 @@
-import { Todo, ITodo } from "@/Todo/interfaces/interface";
+import { ITodo } from "@/Todo/interfaces/interface";
 import React from "react";
-import Image from "next/image";
 import IconCheck from "../../../../public/images/icon-check.svg";
 import IconCross from "../../../../public/images/icon-cross.svg";
 
@@ -68,7 +67,7 @@ const TodoItem: React.FC<ITodo> = ({ todo, toggleTodo, deleteTodo, swapTodo, id 
             style={{ display: todo.isCompleted ? "flex" : "" }}
             className=" hidden absolute h-5 w-5 md:h-6 md:w-6 border-pri-110 rounded-full bg-pri-110 flex flex-shrink-0 items-center justify-center "
           >
-            <Image src={IconCheck} alt="checked" />
+            <img src={IconCheck} alt="checked" />
           </span>
           <span
             style={{
@@ -90,7 +89,7 @@ const TodoItem: React.FC<ITodo> = ({ todo, toggleTodo, deleteTodo, swapTodo, id 
            hover:bg-neutral-120"
           onClick={() => deleteTodo(todo.id)}
         >
-          <Image src={IconCross} alt="delete task" className="w-3 h-3 " />
+          <img src={IconCross} alt="delete task" className="w-3 h-3 " />
         </button>
       </div>
     </li>

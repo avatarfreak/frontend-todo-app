@@ -1,10 +1,8 @@
 import React from "react";
 import { ThemeContext } from "@/Todo/context/ThemeContext";
 import { Form } from "./Form";
-import Image from "next/image";
 import moon from "../../../../public/images/icon-moon.svg";
 import sun from "../../../../public/images/icon-sun.svg";
-import Head from "next/head";
 
 const Header = () => {
   const { dark, toggleDark } = React.useContext(ThemeContext);
@@ -30,11 +28,7 @@ const Header = () => {
             {/* toggle theme image */}
             <button onClick={() => toggleDark()} className="pgt-focus-visible">
               <figure>
-                {isDark ? (
-                  <Image src={sun} alt="theme-dark" />
-                ) : (
-                  <Image src={moon} alt="theme-light" />
-                )}
+                {isDark ? <img src={sun} alt="theme-dark" /> : <img src={moon} alt="theme-light" />}
               </figure>
             </button>
           </div>
