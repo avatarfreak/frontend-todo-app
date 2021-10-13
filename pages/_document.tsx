@@ -7,10 +7,12 @@ class MyDocument extends Document {
     return initialProps;
   }
   render() {
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH;
     return (
       <Html>
         <Head>
           <meta name="description" content="Todo App challenge by avatarfreak" />
+          <link rel="shortcut icon" href={prefix + "favicon.ico"} type="image/x-icon" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
