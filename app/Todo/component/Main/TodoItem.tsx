@@ -71,8 +71,8 @@ const TodoItem: React.FC<ITodo> = ({ todo, toggleTodo, deleteTodo, swapTodo, id 
           </span>
           <span
             style={{
-              textDecoration: todo.isCompleted ? "line-through" : "",
-              color: todo.isCompleted ? "var(--neutral-160)" : "",
+              textDecoration: todo.isCompleted ? "line-through" : "none ",
+              color: todo.isCompleted ? "var(--neutral-160)" : "none",
             }}
             className="text-neutral-140 dark:text-neutral-120 text-xs md:text-base font-bold block ml-4 md:ml-6 flex-auto cursor-pointer"
           >

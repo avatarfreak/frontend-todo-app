@@ -16,7 +16,7 @@ const TodoStatus: React.FC<IDisplayItems> = ({
 
   return (
     <li className="bg-neutral-100 py-3 px-4 space-x-5 font-bold text-neutral-130 text-xs md:text-sm items-center justify-between flex ">
-      <h3>{pluralize(items)}</h3>
+      <p>{pluralize(items)}</p>
       <div className="hidden md:block">
         <ButtonFilter FILTER_NAMES={FILTER_NAMES} setFilter={setFilter} />
       </div>
